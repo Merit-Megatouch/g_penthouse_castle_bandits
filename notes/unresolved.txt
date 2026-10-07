@@ -1,0 +1,125 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+GetLocation(unsigned char, char (&) [255]) | g_penthouse_castle_bandits.so
+open_sprfli(char const*) | g_penthouse_castle_bandits.so
+close_sprfli(char const*) | g_penthouse_castle_bandits.so
+GetTouchCoord(int*, int*, int*) | g_penthouse_castle_bandits.so
+GetHelpFileName(char (&) [255], char const*, Locale::Languages, char const*) | g_penthouse_castle_bandits.so
+IsScreenTouched() | g_penthouse_castle_bandits.so
+get_sprfli_bitmap(char const*) | g_penthouse_castle_bandits.so
+next_sprfli_frame(char const*, int) | g_penthouse_castle_bandits.so
+get_sprfli_palette(char const*) | g_penthouse_castle_bandits.so
+MeritthonDisplayRound(int, int, int, unsigned long) | g_penthouse_castle_bandits.so
+t_i_l() | g_penthouse_castle_bandits.so
+megaend() | g_penthouse_castle_bandits.so
+QueFlush(bool) | g_penthouse_castle_bandits.so
+megastart(char const*, app_common::args_t*) | g_penthouse_castle_bandits.so
+Translator::LoadTranslations(xml_gameinfo::GameIds) | g_penthouse_castle_bandits.so
+Translator::SetCurrentLanguage(Locale::Languages) | g_penthouse_castle_bandits.so
+WorldClass::FrameNumber(Bitmap*) | g_penthouse_castle_bandits.so
+WorldClass::WaitOnFrame(unsigned long, bool) | g_penthouse_castle_bandits.so
+WorldClass::PlayDeltaAnim(char*, int, int, unsigned long, unsigned long, char*, unsigned short, unsigned char, bool) | g_penthouse_castle_bandits.so
+WorldClass::CopyCompBitmap(Bitmap*, int, int, int, int, int, int, int, int, int, int, bool) | g_penthouse_castle_bandits.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | g_penthouse_castle_bandits.so
+WorldClass::SetBack(Bitmap*, int) | g_penthouse_castle_bandits.so
+WorldClass::SetBack(char const*, int) | g_penthouse_castle_bandits.so
+WorldClass::SetBack(short) | g_penthouse_castle_bandits.so
+WorldClass::ShowAll() | g_penthouse_castle_bandits.so
+WorldClass::GetFrame(Bitmap*, int) | g_penthouse_castle_bandits.so
+WorldClass::DeleteBmp(Bitmap*, unsigned char) | g_penthouse_castle_bandits.so
+WorldClass::NextFrame(unsigned char, unsigned char, bool, bool, bool, bool) | g_penthouse_castle_bandits.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | g_penthouse_castle_bandits.so
+WorldClass::WorldClass() | g_penthouse_castle_bandits.so
+SystemClass::FlushKB() | g_penthouse_castle_bandits.so
+system_info::SystemInfo::GetInstance() | g_penthouse_castle_bandits.so
+system_info::SystemInfo::IsPlatformGameTime() | g_penthouse_castle_bandits.so
+system_info::Get_Motherboard_Type() | g_penthouse_castle_bandits.so
+xml_gameinfo::enum_GameIds_tag(xml_gameinfo::GameIds, bool) | libcontent.so
+ChainRestClass::GetPicFileName(xml_gameinfo::GameIds, int) | g_penthouse_castle_bandits.so
+xml_gamerandom::PICRAND_record::PICRAND_record() | g_penthouse_castle_bandits.so
+xml_gamerandom::PICRAND_record::~PICRAND_record() | g_penthouse_castle_bandits.so
+xml_gamerandom::PICRAND_record::operator=(xml_gamerandom::PICRAND_record const&) | g_penthouse_castle_bandits.so
+RandomizedArrayClass::GetNextValue(int) | g_penthouse_castle_bandits.so
+RandomizedArrayClass::RandomizedArrayClass(xml_gamerandom::PICRAND_record*, int, unsigned char, unsigned short*) | g_penthouse_castle_bandits.so
+RandomizedArrayClass::~RandomizedArrayClass() | g_penthouse_castle_bandits.so
+List::Push(Group*) | g_penthouse_castle_bandits.so
+List::Clear(unsigned char) | g_penthouse_castle_bandits.so
+List::IsEmpty() | g_penthouse_castle_bandits.so
+List::List(List*) | g_penthouse_castle_bandits.so
+Books::Credits(xml_gameinfo::GameIds, enums::Span) | g_penthouse_castle_bandits.so
+Books::Instance() | g_penthouse_castle_bandits.so
+Group::Signal(Group::SpriteSignalType) | g_penthouse_castle_bandits.so
+Group::Signal(SpriteSignal*) | g_penthouse_castle_bandits.so
+Group::Message(Group::SpriteSignalType) | g_penthouse_castle_bandits.so
+Group::Message(SpriteSignal*) | g_penthouse_castle_bandits.so
+USBIO::FoundUSB() | g_penthouse_castle_bandits.so
+Bitmap::DeCompress() | g_penthouse_castle_bandits.so
+Bitmap::ReplaceTrans(bool) | g_penthouse_castle_bandits.so
+Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | g_penthouse_castle_bandits.so
+Bitmap::GreyBmp() | g_penthouse_castle_bandits.so
+Bitmap::LoadJPEG(char*, int, int, unsigned char) | g_penthouse_castle_bandits.so
+EventO::GetType() | g_penthouse_castle_bandits.so
+EventO::EventO() | g_penthouse_castle_bandits.so
+EventO::~EventO() | g_penthouse_castle_bandits.so
+Sprite::DoNextFrame() | g_penthouse_castle_bandits.so
+Sprite::AssignString(String*, unsigned long) | g_penthouse_castle_bandits.so
+Sprite::ClicksEnabled | g_penthouse_castle_bandits.so
+Sprite::DeleteAfterLast(unsigned long) | g_penthouse_castle_bandits.so
+Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | g_penthouse_castle_bandits.so
+Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | g_penthouse_castle_bandits.so
+Sprite::Curve(int, int, int, int, int, int, int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | g_penthouse_castle_bandits.so
+Sprite::Reset() | g_penthouse_castle_bandits.so
+Sprite::DoDraw() | g_penthouse_castle_bandits.so
+Sprite::Enable(unsigned long) | g_penthouse_castle_bandits.so
+Sprite::FadeIn(unsigned long, unsigned long, int, int) | g_penthouse_castle_bandits.so
+Sprite::SetBmp(Bitmap*, unsigned long) | g_penthouse_castle_bandits.so
+Sprite::Signal(Group::SpriteSignalType) | g_penthouse_castle_bandits.so
+Sprite::Signal(SpriteSignal*) | g_penthouse_castle_bandits.so
+Sprite::Disable(unsigned long, bool) | g_penthouse_castle_bandits.so
+Sprite::FadeOut(unsigned long, unsigned long, int, int) | g_penthouse_castle_bandits.so
+Sprite::Message(Group::SpriteSignalType) | g_penthouse_castle_bandits.so
+Sprite::Message(SpriteSignal*) | g_penthouse_castle_bandits.so
+Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | g_penthouse_castle_bandits.so
+Sprite::SetCord(float, float, float, unsigned long) | g_penthouse_castle_bandits.so
+Sprite::SetSize(int, int) | g_penthouse_castle_bandits.so
+Sprite::DoCommand(int) | g_penthouse_castle_bandits.so
+Sprite::PlaySound(char*, int, unsigned long) | g_penthouse_castle_bandits.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | g_penthouse_castle_bandits.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | g_penthouse_castle_bandits.so
+Sprite::~Sprite() | g_penthouse_castle_bandits.so
+String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | g_penthouse_castle_bandits.so
+NVRAMMap::SetGameOption(xml_gameoptions::GameOptionIndex, unsigned char) | g_penthouse_castle_bandits.so
+Settings::Init() | g_penthouse_castle_bandits.so
+Settings::Init() | libcontent.so
+Settings::Load() | g_penthouse_castle_bandits.so
+Settings::Load() | libcontent.so
+Settings::Cleanup() | g_penthouse_castle_bandits.so
+Settings::Cleanup() | libcontent.so
+Settings::Restore(abstract_xml_record const*) | g_penthouse_castle_bandits.so
+Settings::Restore(abstract_xml_record const*) | libcontent.so
+Settings::SaveNow() | libcontent.so
+Settings::Settings(char const*, unsigned int) | g_penthouse_castle_bandits.so
+Settings::Settings(char const*, unsigned int) | libcontent.so
+Settings::~Settings() | g_penthouse_castle_bandits.so
+Settings::~Settings() | libcontent.so
+GameClass::GameClass() | g_penthouse_castle_bandits.so
+GameClass::~GameClass() | g_penthouse_castle_bandits.so
+xml_gamerandom::PICRAND_record::operator!=(xml_gamerandom::PICRAND_record const&) const | g_penthouse_castle_bandits.so
+Settings::Key(unsigned int, bool) const | g_penthouse_castle_bandits.so
+Settings::Key(unsigned int, bool) const | libcontent.so
+typeinfo for EventO | g_penthouse_castle_bandits.so
+typeinfo for Sprite | g_penthouse_castle_bandits.so
+typeinfo for Settings | g_penthouse_castle_bandits.so
+typeinfo for Settings | libcontent.so
+typeinfo for GameClass | g_penthouse_castle_bandits.so
+typeinfo for xml_gamerandom::PICRAND_record | g_penthouse_castle_bandits.so
+vtable for DOSLinuxWorld | g_penthouse_castle_bandits.so
+blit | g_penthouse_castle_bandits.so
+clear_bitmap | g_penthouse_castle_bandits.so
+gfx_driver | g_penthouse_castle_bandits.so
+screen | g_penthouse_castle_bandits.so
+set_mouse_sprite | g_penthouse_castle_bandits.so
+set_palette | g_penthouse_castle_bandits.so
+voice_ramp_volume | g_penthouse_castle_bandits.so
