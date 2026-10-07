@@ -3,14 +3,9 @@
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
 GetLocation(unsigned char, char (&) [255]) | g_penthouse_castle_bandits.so
-IsScreenTouched() | g_penthouse_castle_bandits.so
 t_i_l() | g_penthouse_castle_bandits.so
 megaend() | g_penthouse_castle_bandits.so
 megastart(char const*, app_common::args_t*) | g_penthouse_castle_bandits.so
 SystemClass::FlushKB() | g_penthouse_castle_bandits.so
 USBIO::FoundUSB() | g_penthouse_castle_bandits.so
 NVRAMMap::SetGameOption(xml_gameoptions::GameOptionIndex, unsigned char) | g_penthouse_castle_bandits.so
-GameClass::GameClass() | g_penthouse_castle_bandits.so
-GameClass::~GameClass() | g_penthouse_castle_bandits.so
-typeinfo for GameClass | g_penthouse_castle_bandits.so
-voice_ramp_volume | g_penthouse_castle_bandits.so
